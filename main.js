@@ -1,16 +1,16 @@
 const linkSocialMedia = {
   github: 'HevertonCoutinho',
-  youtube: 'hevertoncout',
+  youtube: 'channel/UCyMdG053O0H_XFeE-d-Ml1Q',
   facebook: 'hevertoncout',
   instagram: 'hevertoncout',
-  twitter: 'hevertoncout'
+  twitter: 'Hevertoncout'
 }
 
 function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
 
-    li.children[0].href = `https://${social}.com${linkSocialMedia[social]}`
+    li.children[0].href = `https://${social}.com/${linkSocialMedia[social]}`
   }
 }
 
